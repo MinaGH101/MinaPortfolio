@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="main">
+<div class="services" id="services">
+    <div class="section-top">
+        <svg class="section" width="87" height="78" viewBox="0 0 87 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M69.6 58.5H60.9V53.62H26.1V58.5H17.4V53.62H0V78H87V53.62H69.6V58.5Z" fill="black" />
+            <path
+                d="M78.3 19.5H65.25V9.75C65.25 4.39 61.33 0 56.55 0H30.45C25.66 0 21.75 4.39 21.75 9.75V19.5H8.69995C3.90995 19.5 0 23.89 0 29.25V48.75H17.4V39H26.1V48.75H60.9V39H69.6V48.75H87V29.25C87 23.89 83.08 19.5 78.3 19.5ZM56.55 19.5H30.45V9.75H56.55V19.5Z"
+                fill="black" />
+        </svg>
+
+        <h1 class="title serv">My Services</h1>
+        <h4 class="serv sub">Contact me for Free Consulation!</h4>
+    </div>
+    <div class="service-cards">
+
+        <div class="card-outer">
+            <div class="card" id="card">
+                <div class="card-front">
+                    <img src="{% static 'statics/images/ai.png' %}" alt="" class="card">
+                    <h4 class="card">Data Engineering</h4>
+                    <h5 class="card serv">Ai system development, machine learning and data projects.</h5>
+                    <!-- <button class="flip-button-front"></button> -->
+                </div>
+                <div class="card-back">
+                    <h5 class="card serv">If u have some data about a problem you are trying to solve, or even if you need to collect the data first, I can help you! I'm ready to fulfill your machine learning and data analysis project, call me for free consulation:)</h5>
+                    <!-- <button class="flip-button-back"></button> -->
+                </div>
+            </div>
+        </div>
+        <div class="card-outer">
+            <div class="card">
+                <div class="card-front">
+                    <img src="{% static 'statics/images/op.png' %}" alt="" class="card">
+                    <h4 class="card">Optimization</h4>
+                    <h5 class="card serv">Process or system optimization, using Ai tools.</h5>
+                    <!-- <button class="flip-button-front"></button> -->
+                </div>
+                <div class="card-back">
+                    <h5 class="card serv">We can collect and analyze data from any kind of industrial or bussines process, then optimize it by machine learning to get a higher profit and save time and money, call me for free consulation:)</h5>
+                    <!-- <button class="flip-button-back"></button> -->
+                </div>
+            </div>
+        </div>
+        <div class="card-outer">
+            <div class="card">
+                <div class="card-front">
+                    <img src="{% static 'statics/images/web.png' %}" alt="" class="card">
+                    <h4 class="card">Web Development</h4>
+                    <h5 class="card serv">blog, E-commercie</h5>
+                </div>
+                <div class="card-back">
+                    <h5 class="card serv">I'm high skilled in python django framework, SQL database & and also in html/css/Js, that I can easily design and code any kind of website such as blogs and online stores,call me for free consulation:)</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+{% endblock content %}

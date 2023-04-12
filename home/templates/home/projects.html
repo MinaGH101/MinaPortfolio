@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="main">
+    <div class="projects" id="proj">
+        <div class="section-top">
+            <img class="section" src="{% static 'statics/images/application-braces.svg' %}" alt="">
+            <h1 class="title proj">My Projects</h1>
+            <h4 class="proj sub">These are some of my finished projects!</h4>
+        </div>
+        <div class="proj-cards">
+            {% for project in projects %}
+            <div class="card proj">
+                <img src="{{ project.img.url }}">
+                <h4 class="card proj">{{ project.title }}</h4>
+                <h4></h4>
+                <div class="card-text">
+                    <h5 class="card proj">{{ project.body }}</h5>
+                    {% if project.employee %}
+                    <h5 class="card proj">Employee: <img src="{{ project.employee_img.url }}" alt="" class="employee">
+                        <a href="{{ project.employee_url }}" class="employee" target="_blank">{{ project.employee }}</a></h5>
+                    {% endif %}
+                    {% if project.employee2 %}
+                    <h5 class="card proj">Employee: <img src="{{ project.employee2_img.url }}" alt="" class="employee">
+                        <a href="{{ project.employee2_url }}" class="employee" target="_blank">{{ project.employee2 }}</a></h5>
+                    {% endif %}
+                    {% if project.project_url %}
+                    <h5 class="card proj"><a href="{{ project.project_url }}" class="employee" target="_blank">Git-Hub Link</a></h5>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+</section>
+
+
+{% endblock content %}

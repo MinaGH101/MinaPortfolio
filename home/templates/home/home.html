@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="main">
+    <div class="top" id="top">
+        <div class="eng">
+            <h1>I'm Mina Gholami</h1>
+            <br>
+            <h1 class="machine">Machine Learning</h1>
+            <h1>engineer.</h1>
+            <br>
+            <div class="par">
+                <h5>Hi! I’m Mina Gholami, I graduated in Material Science and Engineering at Iran University of Science and Technology (IUST) and I am now, master student in the same major and the same uni. I started to learn Machine Learning and
+                    Python Programing 3 years ago, and now, I’m an expertise in </h5>
+                <h4 class="yellow">Machine Learning & Deep Learning</h4>.
+                <h5>I’m also an experienced
+                    <h4 class="yellow">Back-End developer.</h4>
+                </h5>
+            </div>
+            <div class="buttun">
+                <buttun class="yellow">
+                    <a href="{% url 'home:message' %}" class="yellow">
+                        <h4>Contact Me!</h4>
+                    </a>
+
+                </buttun>
+            </div>
+            <div class="buttun purple">
+                <buttun class="yellow purple">
+                    <a href="https://drive.google.com/file/d/12l2AOE743zrfr2BRMcB2mIub3EX007R3/view?usp=share_link" class="yellow purple" target="_blank">
+                        <h4>My Resume</h4>
+                    </a>
+
+                </buttun>
+            </div>
+        </div>
+        <div class="far">
+            <h1 class="far-title">مینا غلامی</h1>
+            <br>
+            <h1>متخصص داده و</h1>
+            <h1 class="machine"> یادگیری ماشین</h1>
+            <br>
+            <div class="par">
+                <h5>در رشته مهندسی مواد و متالورژی دانشگاه علم و صنعت فارغ و التحصیل شدم و مستقیم و بدون آزمون به مقطع ارشد رفتم. سه سال پیش یادگیری زبان برنامه نویسی پایتون و یادگیری ماشین را شروع کردم و حالا متخصص یادگیری ماشین و یادگیری عمیق و
+                    همچنین توسعه دهنده بک-اند هستم. </h5>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

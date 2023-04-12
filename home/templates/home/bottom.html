@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="main">
+
+    <div class="buttom">
+
+        <div class="flip-card-3D-wrapper">
+            <div id="flip-card">
+                <div class="flip-card-front">
+                    <div class="butt-title title-flip">
+                        <img src="{% static 'statics/images/icons8-graduate-100.png' %}" alt="" class="butt-title flip">
+                        <h3 class="butt-title flip">Education</h3>
+                    </div>
+                    <div class="edu">
+                        <div class="edu-section">
+                            <h3 class="edu-title">1396-1400</h3>
+                            <div class="edu-text">کارشناسی مهندسی مواد و متالورژی</div>
+                            <a href="https://www.iust.ac.ir/" class="flip" target="_blank">
+                                <div class="edu-text">دانشگاه علم و صنعت ایران</div>
+                            </a>
+                        </div>
+                        <div class="edu-section">
+                            <h3 class="edu-title">1400-1402</h3>
+                            <div class="edu-text">کارشناسی ارشد مهندسی مواد و متالورژی،سرامیک</div>
+                            <a href="https://www.iust.ac.ir/" class="flip" target="_blank">
+                                <div class="edu-text">دانشگاه علم و صنعت ایران</div>
+                            </a>
+                        </div>
+                        <div class="edu-section">
+                            <h3 class="edu-title">1398-1399</h3>
+                            <div class="edu-text">دوره پیشرفته یادگیری ماشین
+                            </div>
+                            <a href="https://idsec.ir/" class="flip" target="_blank">
+                                <div class="edu-text">موسسه کیهان علم داده ایرانیان
+                                </div>
+                            </a>
+                        </div>
+                        <div class="edu-section">
+                            <h3 class="edu-title">پاییز 1401</h3>
+                            <div class="edu-text">دوره پیشرفته یادگیری عمیق
+                            </div>
+                            <a href="https://imt.college/" class="flip" target="_blank">
+                                <div class="edu-text">آکادمی آی ام تی
+                                </div>
+                            </a>
+                        </div>
+                        <div class="edu-section">
+                            <h3 class="edu-title">پاییز 1401</h3>
+                            <div class="edu-text">دوره پیشرفته طراحی بک-اند سایت
+                            </div>
+                            <a href="https://amirrasooli.ir/" class="flip" target="_blank">
+                                <div class="edu-text">طراحی پایای آنوش
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button id="flip-card-btn-turn-to-back">English</button>
+                </div>
+                <div class="flip-card-back">
+                    <div class="butt-title title-flip">
+                        <img src="{% static 'statics/images/icons8-graduate-100.png' %}" alt="" class="butt-title flip">
+                        <h3 class="butt-title flip">Education</h3>
+                    </div>
+                    <div class="edu">
+                        <div class="edu-section">
+                            <h3 class="edu-title">2017-2021</h3>
+                            <div class="edu-text">Material Engineering - Bachelor's degree</div>
+                            <a href="https://www.iust.ac.ir/" class="flip" target="_blank">
+                                <div class="edu-text">Iran University of Science & Technology (IUST)</div>
+                        </div>
+                        </a>
+                        <div class="edu-section">
+                            <h3 class="edu-title">2021-2023</h3>
+                            <div class="edu-text">Material Engineering - Master's degree</div>
+                            <a href="https://www.iust.ac.ir/" class="flip" target="_blank">
+                                <div class="edu-text">Iran University of Science & Technology (IUST)</div>
+                        </div>
+                        </a>
+                        <div class="edu-section">
+                            <h3 class="edu-title">2020-2021</h3>
+                            <div class="edu-text">Advanced Machine Learning Course
+                            </div>
+                            <a href="https://idsec.ir/" class="flip" target="_blank">
+                                <div class="edu-text">Iranian Data Science and Engineering Community (IDSEC)
+                                </div>
+                            </a>
+                        </div>
+                        <div class="edu-section">
+                            <h3 class="edu-title">2022</h3>
+                            <div class="edu-text">Advanced Deep Learning Course
+                            </div>
+                            <a href="https://imt.college/" class="flip" target="_blank">
+                                <div class="edu-text">IMT College
+                                </div>
+                            </a>
+                        </div>
+                        <div class="edu-section">
+                            <h3 class="edu-title">2022</h3>
+                            <div class="edu-text">Back-End Development full Course
+                            </div>
+                            <a href="https://amirrasooli.ir/" class="flip" target="_blank">
+                                <div class="edu-text">Anoosh Informatic Stable Design
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button id="flip-card-btn-turn-to-front">فارسی</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contact butt" id="contact">
+            <div class="butt-title">
+                <img src="{% static 'statics/images/icons8-call-me-100.png' %}" alt="" class="butt-title">
+                <h3 class="butt-title">Cantact</h3>
+            </div>
+            <div class="butt-main">
+                <div class="whatsapp cont">
+                    <img src="{% static 'statics/images/icons8-whatsapp (1).svg' %}" alt="" class="butt-main">
+                    <h4 class="butt-main"><a href="https://api.whatsapp.com/send?phone=9108266247" class="butt" target="_blank">0910-8266247</a></h4>
+                </div>
+                <div class="gmail cont">
+                    <img src="{% static 'statics/images/icons8-gmail-logo.svg' %}" alt="" class="butt-main">
+                    <h4 class="butt-main"><a href="https://mail.google.com/mail/u/?authuser=migholami101@gmail.com" class="butt" target="_blank">migholami101@gmail.com</a></h4>
+                </div>
+                <div class="insta cont">
+                    <img src="{% static 'statics/images/icons8-instagram.svg' %}" alt="" class="butt-main">
+                    <h4 class="butt-main"><a href="https://instagram.com/minagh101" class="butt" target="_blank">@minagh101</a></h4>
+                </div>
+                <div class="call cont">
+                    <img src="{% static 'statics/images/icons8-phone-64.png' %}" alt="" class="butt-main">
+                    <h4 class="butt-main"><a href="tel:09108266247" class="butt" target="_blank">0910-8266247</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', function(event) {
+
+        document.getElementById('flip-card-btn-turn-to-back').style.visibility = 'visible';
+        document.getElementById('flip-card-btn-turn-to-front').style.visibility = 'visible';
+
+        document.getElementById('flip-card-btn-turn-to-back').onclick = function() {
+            document.getElementById('flip-card').classList.toggle('do-flip');
+        };
+
+        document.getElementById('flip-card-btn-turn-to-front').onclick = function() {
+            document.getElementById('flip-card').classList.toggle('do-flip');
+        };
+
+    });
+</script>
+
+{% endblock content %}

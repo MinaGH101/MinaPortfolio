@@ -1,0 +1,24 @@
+{% load static %}
+
+<section class="side-menu">
+    <div class="side-menu">
+        <ul class="side-menu">
+            <li class="side-menu">
+                <a href="{% url 'home:home' %}" class="home"><img src="{% static 'statics/images/home.svg' %}" alt="" class="home"></a>
+            </li>
+            <li class="side-menu">
+                <a href="{% url 'home:services' %}" class="services"><img src="{% static 'statics/images/serv.svg' %}" alt="" class="services"></a>
+            </li>
+            <li class="side-menu">
+                <a href="{% url 'home:projects' %}" class="projects"><img src="{% static 'statics/images/application-braces.svg' %}" alt="" class="projects"></a>
+            </li>
+            <li class="side-menu">
+                <a href="{% url 'home:buttom' %}" class="education"><img src="{% static 'statics/images/edu.svg' %}" alt="" class="education"></a>
+            </li>
+            <li class="side-menu">
+                <a href="{% url 'home:buttom' %}" class="contact"><img src="{% static 'statics/images/call.svg' %}" alt="" class="contact"></a>
+            </li>
+        </ul>
+    </div>
+
+</section>
